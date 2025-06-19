@@ -15,18 +15,22 @@
 
 .. class:: center
 
-    :Название исследуемой задачи: Нахождение прямых траекторий в Flow Matching за один шаг
+    :Название исследуемой задачи: Optimal Flow Matching: новый подход к генеративному моделированию и оптимальному транспорту 
     :Тип научной работы: магистерская диссертация
     :Автор: Никита Максимович Корнилов
     :Научный руководитель: д. ф.-м. н., Гасников Александр Владимирович
     :Научный консультант(при наличии): к. ф.-м. н., Коротин Александр Андреевич
 
-Abstract
+Абстракт
 ========
 
-Over the several recent years, there has been a boom in development of Flow Matching (FM) methods for generative modeling. One intriguing property pursued by the community is the ability to learn flows with straight trajectories which realize the Optimal Transport (OT) displacements. Straightness is crucial for the fast integration (inference) of the learned flow's paths. Unfortunately, most existing flow straightening methods are based on non-trivial iterative FM procedures which accumulate the error during training or exploit heuristics based on minibatch OT. To address these issues, we develop and theoretically justify the novel Optimal Flow Matching (OFM) approach which allows recovering the straight OT displacement for the quadratic transport in just one FM step. The main idea of our approach is the employment of vector field for FM which are parameterized by convex functions.
+В последние несколько лет в области генеративного моделирования активно развиваются Flow Matching (FM) методы. Одно из желаемых свойств этих методов,  это возможность обучать потоки с прямыми траекториями, реализующими оптимальные транспортные (Optimal Transport, OT) перемещения. Прямолинейность траекторий критически важна для быстрого и качественного семплирования из моделей.
 
-Research publications
+Однако большинство существующих методов спрямления траекторий основаны на нетривиальных итеративных процедурах, которые накапливают ошибку в процессе обучения, или используют эвристики, опирающиеся на мини-батч OT.
+
+Чтобы исправить эти недостатки, я разработал и теоретически обосновал новый подход — Optimal Flow Matching (OFM), который позволяет восстановить решение оптимального транспорта для квадратичной функции потерь всего за один шаг FM минимизации. Основная идея этого подхода заключается в использовании прямых векторных полей, параметризованных выпуклыми функциями. Все теоретические свойства и практическая эффективность метода были подтверждены в большом количестве экспериментов на реальных прикладных задачах.
+
+Публикации
 ===============================
 1. https://arxiv.org/abs/2403.13117
 
